@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte
+CMAKE_SOURCE_DIR = C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build
+CMAKE_BINARY_DIR = C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\components\global_lib\\CMakeFiles\progress.marks
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles 0
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\components\global_lib\\CMakeFiles\progress.marks
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/clean
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/preinstall
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/preinstall
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 components/global_lib/CMakeFiles/global_lib.dir/rule:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/CMakeFiles/global_lib.dir/rule
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/CMakeFiles/global_lib.dir/rule
 .PHONY : components/global_lib/CMakeFiles/global_lib.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ global_lib: components/global_lib/CMakeFiles/global_lib.dir/rule
 
 # fast build rule for target.
 global_lib/fast:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/build
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/build
 .PHONY : global_lib/fast
 
 global.obj: global.c.obj
@@ -134,7 +134,7 @@ global.obj: global.c.obj
 
 # target to build an object file
 global.c.obj:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/global.c.obj
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/global.c.obj
 .PHONY : global.c.obj
 
 global.i: global.c.i
@@ -142,7 +142,7 @@ global.i: global.c.i
 
 # target to preprocess a source file
 global.c.i:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/global.c.i
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/global.c.i
 .PHONY : global.c.i
 
 global.s: global.c.s
@@ -150,7 +150,7 @@ global.s: global.c.s
 
 # target to generate assembly for a file
 global.c.s:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/global.c.s
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/global.c.s
 .PHONY : global.c.s
 
 # Help Target
@@ -176,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

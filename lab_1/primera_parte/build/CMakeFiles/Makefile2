@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte
+CMAKE_SOURCE_DIR = C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build
+CMAKE_BINARY_DIR = C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -106,14 +106,14 @@ components/global_lib/clean: components/global_lib/CMakeFiles/global_lib.dir/cle
 CMakeFiles/mi_programa.dir/all: components/global_lib/CMakeFiles/global_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mi_programa.dir\build.make CMakeFiles/mi_programa.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mi_programa.dir\build.make CMakeFiles/mi_programa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=3,4 "Built target mi_programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=3,4 "Built target mi_programa"
 .PHONY : CMakeFiles/mi_programa.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mi_programa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/mi_programa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles 0
 .PHONY : CMakeFiles/mi_programa.dir/rule
 
 # Convenience name for target.
@@ -123,7 +123,7 @@ mi_programa: CMakeFiles/mi_programa.dir/rule
 # codegen rule for target.
 CMakeFiles/mi_programa.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mi_programa.dir\build.make CMakeFiles/mi_programa.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=3,4 "Finished codegen for target mi_programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=3,4 "Finished codegen for target mi_programa"
 .PHONY : CMakeFiles/mi_programa.dir/codegen
 
 # clean rule for target.
@@ -138,14 +138,14 @@ CMakeFiles/mi_programa.dir/clean:
 components/global_lib/CMakeFiles/global_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=1,2 "Built target global_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=1,2 "Built target global_lib"
 .PHONY : components/global_lib/CMakeFiles/global_lib.dir/all
 
 # Build rule for subdir invocation for target.
 components/global_lib/CMakeFiles/global_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 components/global_lib/CMakeFiles/global_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles 0
 .PHONY : components/global_lib/CMakeFiles/global_lib.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ global_lib: components/global_lib/CMakeFiles/global_lib.dir/rule
 # codegen rule for target.
 components/global_lib/CMakeFiles/global_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f components\global_lib\CMakeFiles\global_lib.dir\build.make components/global_lib/CMakeFiles/global_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sotog\Desktop\Sistemas_embebidos\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=1,2 "Finished codegen for target global_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\selt2\OneDrive\Escritorio\branch_test1\IoT2025\lab_1\primera_parte\build\CMakeFiles --progress-num=1,2 "Finished codegen for target global_lib"
 .PHONY : components/global_lib/CMakeFiles/global_lib.dir/codegen
 
 # clean rule for target.

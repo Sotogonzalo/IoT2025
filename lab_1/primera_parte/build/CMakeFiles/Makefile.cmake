@@ -98,11 +98,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/primera_parte/CMakeLists.txt"
+  "C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/CMakeLists.txt"
   "CMakeFiles/4.0.0/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.0/CMakeRCCompiler.cmake"
   "CMakeFiles/4.0.0/CMakeSystem.cmake"
-  "C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/primera_parte/components/global_lib/CMakeLists.txt"
+  "C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/components/global_lib/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
