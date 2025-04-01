@@ -21,7 +21,7 @@ typedef struct {
 
 // funciones resueltas
 void init_lab(void);
-root_t eq_solver(coeff_t *coeficientes);
+root_t eq_solver(coeff_t *coefficient);
 
 //Convierta un número binario en uno decimal:
 int32_t bin2dec(int32_t binary, bool sign);

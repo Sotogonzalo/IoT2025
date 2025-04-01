@@ -1,6 +1,6 @@
 #include <stdio.h>
-// #include "global.h"
-#include "../components/global_lib/include/global.h"
+#include "global.h"
+// #include "../components/global_lib/include/global.h"
 
 int main() {
 
@@ -10,7 +10,7 @@ int main() {
     root_t soluciones = eq_solver(&coef);
 
     if (soluciones.has_real_roots) {
-        printf("Raíces reales: %.2f y %.2f\n", soluciones.root1, soluciones.root2);
+        printf("Raices reales: %.2f y %.2f\n", soluciones.root1, soluciones.root2);
     } else {
         printf("La ecuación no tiene raíces reales.\n");
     }

@@ -6,14 +6,14 @@ void global_function() {
 }
 
 void init_lab(void) {
-    printf("Laboratorio lenguaje C de Gonzalo Soto\n");
+    printf("Laboratorio lenguaje C de Gonzalo Soto, Santiago El Ters, Jeronimo Ventos\n");
 }
 
-root_t eq_solver(coeff_t *coeficientes) {
+root_t eq_solver(coeff_t *coefficient) {
     root_t result;
-    double a = coeficientes->a;
-    double b = coeficientes->b;
-    double c = coeficientes->c;
+    double a = coefficient->a;
+    double b = coefficient->b;
+    double c = coefficient->c;
     
     double discriminante = b * b - 4 * a * c;
     

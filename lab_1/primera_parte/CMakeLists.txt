@@ -7,21 +7,18 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 set(component_lib "components")
 set(include_lib "include")
-set(lib_global "global_lib")
+set(lib "global_lib")
 
 # Agregar subdirectorios de las librerías
-add_subdirectory("${component_lib}/${lib_global}")
+add_subdirectory("${component_lib}/${lib}")
 
 # Definir el ejecutable principal
 add_executable(mi_programa src/main.c)
 
 # Vincular las bibliotecas al ejecutable
-target_link_libraries(mi_programa "${lib_global}")
+target_link_libraries(mi_programa "${lib}")
 
 # Agregar los directorios de encabezados de las bibliotecas
 target_include_directories(mi_programa PRIVATE 
-    "${component_lib}/${lib_global}/${include_lib}"
+    "${component_lib}/${lib}/${include_lib}"
 )
-
-include_directories(${CMAKE_SOURCE_DIR}/components/global_lib/include)
-add_executable(main src/main.c components/global_lib/global.c)
