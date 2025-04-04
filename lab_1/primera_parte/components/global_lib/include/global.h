@@ -19,19 +19,28 @@ typedef struct {
     int has_real_roots;
 } root_t;
 
+typedef struct {
+    double real;
+    double imag;
+} complex_t;
+
+
 // funciones resueltas
 void init_lab(void);
 root_t eq_solver(coeff_t *coefficient);
+void max_index(void *array, size_t data_type, size_t array_size);
+void min_index(void *array, size_t data_type, size_t array_size);
+char *reverse_string(char *string);
+int32_t string_length(char *string);
+int32_t string_words(char *string);
+complex_t sum(complex_t a, complex_t b);
+
 
 //Convierta un número binario en uno decimal:
 int32_t bin2dec(int32_t binary, bool sign); // Santi
 
 //Lea los valores en un array y los muestre en pantalla en orden inverso.
 void print_reverse_array(void *array, size_t data_type, size_t array_size); // Jeronimo
-
-//Encuentre los elementos máximo y mínimo en un array.
-void max_index(void *array, size_t data_type, size_t array_size); // Gonza
-void min_index(void *array, size_t data_type, size_t array_size); // Gonza
 
 //Devuelva la resta de dos matrices:
 //matriz_t matrix_sub(matriz_t A, matriz_t B); // Santi
@@ -44,15 +53,6 @@ int swap(void *elem_1, void *elem_2, size_t data_type); // Jeronimo
 int consonantes(char *string); // Jeronimo
 int vocales(char *string); // Jeronimo
 
-//Imprima y devuelve un string al revés:
-char *reverse_string(char *string); // Gonza
-
-//Encuentre la longitud de un string (sin usar funciones de biblioteca) retorna -1 en caso de error:
-int32_t string_length(char *string); // Gonza
-
-//Cuente el número total de palabras en un string. (sin usar librerías standard):
-int32_t string_words(char *string); // Gonza
-
 //Copie un string en otro string. (sin usar librerías standard):
 int string_copy(char *source, char *destination); // Santi
 
@@ -64,9 +64,6 @@ int find_in_string(char *haystack, char *needle); // Santi
 //cida el usuario. (sin usar librerías standard):
 void string_to_caps(char *string); // Jeronimo
 void string_to_min(char *string); // Jeronimo
-
-//Sume dos números complejos:
-//complex_t sum(complex_t a, complex_t b); // Gonza
 
 //Multiplique dos números complejos:
 //complex_t prod(complex_t a, complex_t b); // Santi
