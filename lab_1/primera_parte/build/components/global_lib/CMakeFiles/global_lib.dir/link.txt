@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libglobal_lib.a CMakeFiles/global_lib.dir/global.c.obj
-C:\MinGW\bin\ranlib.exe libglobal_lib.a
