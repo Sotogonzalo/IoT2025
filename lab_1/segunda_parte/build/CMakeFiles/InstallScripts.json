@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/cmake_install.cmake",
+		"C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/components/student_lib/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
