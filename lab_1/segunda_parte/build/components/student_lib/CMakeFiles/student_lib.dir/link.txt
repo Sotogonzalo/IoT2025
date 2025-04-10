@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libstudent_lib.a CMakeFiles/student_lib.dir/student.c.obj
-C:\MinGW\bin\ranlib.exe libstudent_lib.a

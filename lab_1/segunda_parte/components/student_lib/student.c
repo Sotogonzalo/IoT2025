@@ -3,9 +3,7 @@
 #include <string.h>
 #include "student.h"
 
-#define NAME_LEN 50
-
-// Agregar un estudiante al inicio de la lista
+// Función para agregar un estudiante al inicio de la lista
 void add_student(node_t **head, student_t new_student) {
     node_t *new_node = (node_t*)malloc(sizeof(node_t));
     if (!new_node) {
@@ -17,7 +15,7 @@ void add_student(node_t **head, student_t new_student) {
     *head = new_node;
 }
 
-// Eliminar un estudiante por CI
+// Función para eliminar un estudiante por CI
 void remove_student(node_t **head, int32_t ci) {
     node_t *current = *head, *prev = NULL;
     while (current != NULL && current->data.ci != ci) {
@@ -37,7 +35,7 @@ void remove_student(node_t **head, int32_t ci) {
     printf("Estudiante eliminado.\n");
 }
 
-// Mostrar todos los estudiantes
+// Función que muestra todos los estudiantes
 void display_all(node_t *head) {
     if (!head) {
         printf("Lista vacía.\n");
@@ -53,7 +51,7 @@ void display_all(node_t *head) {
     }
 }
 
-// Mostrar un estudiante específico
+// Función para mostrar un estudiante específico
 void display_student(node_t *head, int32_t ci) {
     node_t *current = head;
     while (current) {
@@ -69,55 +67,55 @@ void display_student(node_t *head, int32_t ci) {
     printf("Estudiante con CI %d no encontrado.\n", ci);
 }
 
-// Ordenar lista por CI (Burbuja)
+// Función que ordena la lista por CI (utilizando método Burbuja)
 void sort_by_ci(node_t **head) {
     if (!head || !*head) return;
     int swapped;
-    node_t *ptr1;
-    node_t *lptr = NULL;
+    node_t *pointer;
+    node_t *last_pointer = NULL;
     do {
         swapped = 0;
-        ptr1 = *head;
-        while (ptr1->next != lptr) {
-            if (ptr1->data.ci > ptr1->next->data.ci) {
-                student_t temp = ptr1->data;
-                ptr1->data = ptr1->next->data;
-                ptr1->next->data = temp;
+        pointer = *head;
+        while (pointer->next != last_pointer) {
+            if (pointer->data.ci > pointer->next->data.ci) {
+                student_t temp = pointer->data;
+                pointer->data = pointer->next->data;
+                pointer->next->data = temp;
                 swapped = 1;
             }
-            ptr1 = ptr1->next;
+            pointer = pointer->next;
         }
-        lptr = ptr1;
+        last_pointer = pointer;
     } while (swapped);
 }
 
-// Ordenar lista por Apellido y Nombre (Burbuja)
+// Función para ordenar lista por Apellido y Nombre (utilizando método Burbuja)
 void sort_by_name(node_t **head) {
     if (!head || !*head) return;
     int swapped;
-    node_t *ptr1;
-    node_t *lptr = NULL;
+    node_t *pointer;
+    node_t *last_pointer = NULL;
     do {
         swapped = 0;
-        ptr1 = *head;
-        while (ptr1->next != lptr) {
-            int cmp = strcmp(ptr1->data.apellido, ptr1->next->data.apellido);
+        pointer = *head;
+        while (pointer->next != last_pointer) {
+            int cmp = strcmp(pointer->data.apellido, pointer->next->data.apellido);
             if (cmp == 0) {
-                cmp = strcmp(ptr1->data.nombre, ptr1->next->data.nombre);
+                cmp = strcmp(pointer->data.nombre, pointer->next->data.nombre);
             }
             if (cmp > 0) {
-                student_t temp = ptr1->data;
-                ptr1->data = ptr1->next->data;
-                ptr1->next->data = temp;
+                student_t temp = pointer->data;
+                pointer->data = pointer->next->data;
+                pointer->next->data = temp;
                 swapped = 1;
             }
-            ptr1 = ptr1->next;
+            pointer = pointer->next;
         }
-        lptr = ptr1;
+        last_pointer = pointer;
     } while (swapped);
 }
 
-// Retornar letra correspondiente a promedio
+// Funcion para devolver la letra correspondiente al promedio
 const char* get_grade_letter(float promedio) {
     if (promedio <= 30) return "D";
     else if (promedio <= 60) return "R";
@@ -127,7 +125,7 @@ const char* get_grade_letter(float promedio) {
     else return "S";
 }
 
-// Liberar la lista
+// Liberar memoria de la lista
 void free_list(node_t **head) {
     node_t *current = *head;
     while (current != NULL) {

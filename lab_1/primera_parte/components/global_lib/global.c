@@ -94,7 +94,7 @@ int32_t string_words(char *string) {
                 in_word = 1;
             }
         } else {
-            in_word = 0; // Si encontramos un espacio, salimos de la palabra
+            in_word = 0; // Si encontramos un espacio u otro carácter de salto de línea, salimos de la palabra
         }
     }
 

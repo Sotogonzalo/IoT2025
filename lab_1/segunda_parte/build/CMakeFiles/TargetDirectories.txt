@@ -1,6 +1,0 @@
-C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/CMakeFiles/mi_programa.dir
-C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/CMakeFiles/edit_cache.dir
-C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/CMakeFiles/rebuild_cache.dir
-C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/components/student_lib/CMakeFiles/student_lib.dir
-C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/components/student_lib/CMakeFiles/edit_cache.dir
-C:/Users/sotog/Desktop/Sistemas_embebidos/IoT2025/lab_1/segunda_parte/build/components/student_lib/CMakeFiles/rebuild_cache.dir
