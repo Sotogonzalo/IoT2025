@@ -186,3 +186,30 @@ int string_copy(char *source, char *destination)
     }
     *destination = '\0';
 }
+int find_in_string(char *haystack, char *needle)
+{
+    int cantidad_needles = 0;
+
+    // recorre el hyastack
+    for (int i = 0; haystack[i] != '\0'; i++)
+    {
+        int j = 0;
+
+        // recorre y compara el needle con lo que hay en el haystack
+        while (haystack[i + j] == needle[j])
+        {
+            // si llego al final del array(needle) sumo al contador de cantidad de needles
+            if (needle[j + 1] == '\0')
+            {
+                cantidad_needles++;
+            }
+            j++;
+        }
+    }
+    if (cantidad_needles != 0)
+    {
+        return cantidad_needles;
+    }
+    // si no encontramos el needle, return -1
+    return -1;
+}

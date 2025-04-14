@@ -84,5 +84,10 @@ int main()
     char string_destino[32] = "bieeen :D";             // string destino
     string_copy(string_origen, string_destino);
     printf("%s\n", string_origen);
-    printf("%s", string_destino);
+    printf("%s\n", string_destino);
+
+    // find_in_string
+    char *haystackstring = "hola comi coma comi estas comi";
+    char *needlestring = "comi";
+    printf("cantidad de veces que extraigo el needle del haystack: %i\n", find_in_string(haystackstring, needlestring));
 }

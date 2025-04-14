@@ -42,6 +42,7 @@ complex_t sum(complex_t a, complex_t b);
 int32_t bin2dec(int32_t binary, bool sign);
 matriz_t matrix_sub(matriz_t A, matriz_t B);
 int string_copy(char *source, char *destination);
+int find_in_string(char *haystack, char *needle);
 // Lea los valores en un array y los muestre en pantalla en orden inverso.
 void print_reverse_array(void *array, size_t data_type, size_t array_size); // Jeronimo
 
@@ -55,7 +56,6 @@ int vocales(char *string);     // Jeronimo
 
 // Extraiga una subcadena de una cadena dada, debe retornar -1 en caso de no encontrarse. (sin
 // ar librerías standard):
-int find_in_string(char *haystack, char *needle); // Santi
 
 // Lea una oración y reemplace los caracteres en minúsculas con mayúsculas o viceversa según
 // cida el usuario. (sin usar librerías standard):
