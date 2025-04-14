@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "global.h"
 
-int main() {
+int main()
+{
     // Init_lab
     init_lab();
 
@@ -9,9 +10,12 @@ int main() {
     coeff_t coef = {1, -3, 2}; // Ecuación: x^2 - 3x + 2 = 0
     root_t soluciones = eq_solver(&coef);
 
-    if (soluciones.has_real_roots) {
+    if (soluciones.has_real_roots)
+    {
         printf("Raices reales: %.2f y %.2f\n", soluciones.root1, soluciones.root2);
-    } else {
+    }
+    else
+    {
         printf("La ecuación no tiene raíces reales.\n");
     }
 
@@ -27,11 +31,14 @@ int main() {
     char original[] = "Hola Mundo!";
     char *reversed = reverse_string(original);
 
-    if (reversed != NULL) {
+    if (reversed != NULL)
+    {
         printf("Original: %s\n", original);
         printf("Invertido: %s\n", reversed);
         free(reversed);
-    } else {
+    }
+    else
+    {
         printf("Error al asignar memoria.\n");
     }
 
@@ -50,6 +57,25 @@ int main() {
 
     complex_t resultado = sum(num1, num2);
     printf("Suma compleja: (%.2f, %.2fi)\n", resultado.real, resultado.imag);
-    
-    return 0;
+
+    // bin2dec
+    int32_t binarypos = 101001;
+    int32_t binaryneg = 110010;
+    int decpositivo = bin2dec(binarypos, true);  // numero binario positivo que transformo a decimal
+    int decnegativo = bin2dec(binaryneg, false); // numero binario positivo que transformo a decimal
+    printf("su numero positivo binario es en decimal:%i\n su numero negativo binario es en decimal:%i\n", decpositivo, decnegativo);
+
+    // matrix_sub
+    matriz_t a;
+    a.data[0][0] = 1;
+    a.data[0][1] = 3;
+    a.data[1][0] = 1;
+    a.data[1][1] = 4;
+    matriz_t b;
+    b.data[0][0] = 2;
+    b.data[0][1] = 3;
+    b.data[1][0] = 5;
+    b.data[1][1] = 2;
+    matriz_t resultadomatrixsub = matrix_sub(a, b);
+    printf("a continuacion la matriz equivalente a la resta\n %i %i\n %i %i\n", resultadomatrixsub.data[0][0], resultadomatrixsub.data[0][1], resultadomatrixsub.data[1][0], resultadomatrixsub.data[1][1]);
 }
