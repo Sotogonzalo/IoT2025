@@ -78,4 +78,11 @@ int main()
     b.data[1][1] = 2;
     matriz_t resultadomatrixsub = matrix_sub(a, b);
     printf("a continuacion la matriz equivalente a la resta\n %i %i\n %i %i\n", resultadomatrixsub.data[0][0], resultadomatrixsub.data[0][1], resultadomatrixsub.data[1][0], resultadomatrixsub.data[1][1]);
+
+    // string_copy
+    char string_origen[32] = "hola como estas fvefve"; // string origen
+    char string_destino[32] = "bieeen :D";             // string destino
+    string_copy(string_origen, string_destino);
+    printf("%s\n", string_origen);
+    printf("%s", string_destino);
 }

@@ -170,3 +170,19 @@ matriz_t matrix_sub(matriz_t A, matriz_t B)
     }
     return Result;
 }
+int string_copy(char *source, char *destination)
+{
+    // Verificar si los punteros de los strings son nulos
+    if (source == NULL)
+    {
+        return -1; // Retornar - 1 en caso de error
+    }
+    char *copyback = source;
+    while (*source != '\0')
+    {
+        *destination = *source;
+        destination = destination + 1;
+        source = source + 1;
+    }
+    *destination = '\0';
+}
