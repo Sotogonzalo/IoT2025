@@ -156,3 +156,17 @@ int32_t bin2dec(int32_t binary, bool sign)
     }
     return numero_decimal;
 }
+matriz_t matrix_sub(matriz_t A, matriz_t B)
+{
+    matriz_t Result;
+    for (int i = 0; A.data[i][0] != '\0'; i++)
+    {
+        int j = 0; // uso j para recorrer el array doble
+        while (A.data[i][j] != '\0')
+        {
+            Result.data[i][j] = A.data[i][j] - B.data[i][j];
+            j++;
+        }
+    }
+    return Result;
+}

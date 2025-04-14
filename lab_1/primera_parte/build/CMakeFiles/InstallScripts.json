@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/selt2/OneDrive/Escritorio/git_IoT_2025/IoT2025/lab_1/primera_parte/build/cmake_install.cmake",
-		"C:/Users/selt2/OneDrive/Escritorio/git_IoT_2025/IoT2025/lab_1/primera_parte/build/components/global_lib/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

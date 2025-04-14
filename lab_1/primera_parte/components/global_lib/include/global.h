@@ -26,7 +26,10 @@ typedef struct
     double real;
     double imag;
 } complex_t;
-
+typedef struct
+{
+    int data[10][10];
+} matriz_t;
 // funciones resueltas
 void init_lab(void);
 root_t eq_solver(coeff_t *coefficient);
@@ -42,7 +45,7 @@ int32_t bin2dec(int32_t binary, bool sign);
 void print_reverse_array(void *array, size_t data_type, size_t array_size); // Jeronimo
 
 // Devuelva la resta de dos matrices:
-// matriz_t matrix_sub(matriz_t A, matriz_t B); // Santi
+matriz_t matrix_sub(matriz_t A, matriz_t B); // Santi
 
 // Intercambie el contenido de dos elementos, deberá retornar si la operacion se realizo con exito (0)
 // no (-1):
