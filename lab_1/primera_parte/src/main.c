@@ -90,4 +90,14 @@ int main()
     char *haystackstring = "hola comi coma comi estas comi";
     char *needlestring = "comi";
     printf("cantidad de veces que extraigo el needle del haystack: %i\n", find_in_string(haystackstring, needlestring));
+
+    // complex_prod
+    complex_t num1imag;
+    complex_t num2imag;
+    num1imag.real = 2.0;
+    num1imag.imag = 4.0;
+    num2imag.real = 5.0;
+    num2imag.imag = 6.0;
+    complex_t product = prod(num1, num2);
+    printf("su producto complejo es: %f + %fi", product.real, product.imag);
 }

@@ -213,3 +213,12 @@ int find_in_string(char *haystack, char *needle)
     // si no encontramos el needle, return -1
     return -1;
 }
+complex_t prod(complex_t a, complex_t b)
+{
+    complex_t result;
+
+    // Aplicar la fórmula de multiplicación de números complejos
+    result.real = a.real * b.real - a.imag * b.imag;
+    result.imag = a.real * b.imag + a.imag * b.real;
+    return result;
+}

@@ -43,6 +43,7 @@ int32_t bin2dec(int32_t binary, bool sign);
 matriz_t matrix_sub(matriz_t A, matriz_t B);
 int string_copy(char *source, char *destination);
 int find_in_string(char *haystack, char *needle);
+complex_t prod(complex_t a, complex_t b);
 // Lea los valores en un array y los muestre en pantalla en orden inverso.
 void print_reverse_array(void *array, size_t data_type, size_t array_size); // Jeronimo
 
@@ -61,9 +62,6 @@ int vocales(char *string);     // Jeronimo
 // cida el usuario. (sin usar librerías standard):
 void string_to_caps(char *string); // Jeronimo
 void string_to_min(char *string);  // Jeronimo
-
-// Multiplique dos números complejos:
-// complex_t prod(complex_t a, complex_t b); // Santi
 
 // Al ingresar dos fechas encuentre la diferencia, en días, entre ellas.
 // int days_left(date_t start, date_t finish); // TODOS, dificil
