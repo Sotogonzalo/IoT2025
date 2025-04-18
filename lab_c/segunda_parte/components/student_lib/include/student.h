@@ -33,5 +33,6 @@ void sort_by_name(node_t **head);
 // Utilidades
 const char* get_grade_letter(float promedio);
 void free_list(node_t **head);
+void display_student_data(student_t s);
 
 #endif // STUDENT_H_

@@ -107,3 +107,33 @@ complex_t sum(complex_t a, complex_t b) {
     result.imag = a.imag + b.imag;
     return result;
 }
+
+// Funciones para mostrar las estructuras diseñadas en global.h
+//Consigna
+//NOTA: En caso de definir un tipo nuevo de variable o estructura, deberá proveer de su respectiva
+//función para desplegar el valor de sus atributos.
+
+void display_coeff(coeff_t coeff) {
+    printf("Coeficientes de la ecuación:\n");
+    printf("a = %.2f\n", coeff.a);
+    printf("b = %.2f\n", coeff.b);
+    printf("c = %.2f\n", coeff.c);
+}
+
+void display_roots(root_t roots) {
+    if (roots.has_real_roots) {
+        printf("Raíces reales:\n");
+        printf("x1 = %.2f\n", roots.root1);
+        printf("x2 = %.2f\n", roots.root2);
+    } else {
+        printf("La ecuación no tiene raíces reales.\n");
+    }
+}
+
+void display_complex(complex_t c) {
+    if (c.imag >= 0) {
+        printf("Número complejo: %.2f + %.2fi\n", c.real, c.imag);
+    } else {
+        printf("Número complejo: %.2f - %.2fi\n", c.real, -c.imag);
+    }
+}

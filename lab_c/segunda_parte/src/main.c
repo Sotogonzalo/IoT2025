@@ -23,7 +23,7 @@ int main() {
     remove_student(&head, 87654321);
     
     // Mostrar lista después de eliminación
-    printf("\nLista de estudiantes después de eliminación:\n");
+    printf("\nLista de estudiantes despues de eliminacion:\n");
     display_all(head);
 
     // Mostrar un estudiante específico por CI

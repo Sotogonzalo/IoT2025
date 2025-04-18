@@ -51,7 +51,7 @@ void display_all(node_t *head) {
     }
 }
 
-// Función para mostrar un estudiante específico
+// Función para mostrar un estudiante específico en una lista enlazada por CI
 void display_student(node_t *head, int32_t ci) {
     node_t *current = head;
     while (current) {
@@ -134,4 +134,12 @@ void free_list(node_t **head) {
         current = next;
     }
     *head = NULL;
+}
+
+// Función para mostrar los datos de un estudiante
+void display_student_data(student_t s) {
+    printf("Nombre: %s %s\n", s.nombre, s.apellido);
+    printf("CI: %d\n", s.ci);
+    printf("Grado: %d\n", s.grado);
+    printf("Promedio: %.2f (%s)\n", s.promedio, get_grade_letter(s.promedio));
 }

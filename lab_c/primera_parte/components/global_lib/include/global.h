@@ -24,6 +24,9 @@ typedef struct {
     double imag;
 } complex_t;
 
+void display_coeff(coeff_t coeff);
+void display_roots(root_t roots);
+void display_complex(complex_t c);
 
 // funciones resueltas
 void init_lab(void);
