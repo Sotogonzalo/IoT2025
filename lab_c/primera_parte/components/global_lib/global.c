@@ -108,6 +108,99 @@ complex_t sum(complex_t a, complex_t b) {
     return result;
 }
 
+int32_t bin2dec(int32_t binary, bool sign)
+{
+    int numero_decimal = 0;
+    int cantidad_de_cifras = 0;
+    while (binary > 0)
+    {
+        if (binary % 10) // si tiene resto
+        {
+            numero_decimal = numero_decimal + pow(2, (cantidad_de_cifras));
+            cantidad_de_cifras = cantidad_de_cifras + 1;
+        }
+        else
+        {
+            cantidad_de_cifras = cantidad_de_cifras + 1;
+        }
+        binary = binary / 10;
+    }
+    if (sign == false)
+    {
+        numero_decimal = -numero_decimal;
+    }
+    return numero_decimal;
+}
+
+matriz_t matrix_sub(matriz_t A, matriz_t B)
+{
+    matriz_t Result;
+    for (int i = 0; A.data[i][0] != '\0'; i++)
+    {
+        int j = 0; // uso j para recorrer el array doble
+        while (A.data[i][j] != '\0')
+        {
+            Result.data[i][j] = A.data[i][j] - B.data[i][j];
+            j++;
+        }
+    }
+    return Result;
+}
+
+int string_copy(char *source, char *destination)
+{
+    // Verificar si los punteros de los strings son nulos
+    if (source == NULL)
+    {
+        return -1; // Retornar - 1 en caso de error
+    }
+    char *copyback = source;
+    while (*source != '\0')
+    {
+        *destination = *source;
+        destination = destination + 1;
+        source = source + 1;
+    }
+    *destination = '\0';
+}
+
+int find_in_string(char *haystack, char *needle)
+{
+    int cantidad_needles = 0;
+
+    // recorre el hyastack
+    for (int i = 0; haystack[i] != '\0'; i++)
+    {
+        int j = 0;
+
+        // recorre y compara el needle con lo que hay en el haystack
+        while (haystack[i + j] == needle[j])
+        {
+            // si llego al final del array(needle) sumo al contador de cantidad de needles
+            if (needle[j + 1] == '\0')
+            {
+                cantidad_needles++;
+            }
+            j++;
+        }
+    }
+    if (cantidad_needles != 0)
+    {
+        return cantidad_needles;
+    }
+    // si no encontramos el needle, return -1
+    return -1;
+}
+complex_t prod(complex_t a, complex_t b)
+{
+    complex_t result;
+
+    // Aplicar la fórmula de multiplicación de números complejos
+    result.real = a.real * b.real - a.imag * b.imag;
+    result.imag = a.real * b.imag + a.imag * b.real;
+    return result;
+}
+
 // Funciones para mostrar las estructuras diseñadas en global.h
 //Consigna
 //NOTA: En caso de definir un tipo nuevo de variable o estructura, deberá proveer de su respectiva
