@@ -32,13 +32,9 @@ void display_complex(complex_t c);
 
 typedef struct
 {
-    double real;
-    double imag;
-} complex_t;
-typedef struct
-{
     int data[10][10];
 } matriz_t;
+
 // funciones resueltas
 void init_lab(void);
 root_t eq_solver(coeff_t *coefficient);
