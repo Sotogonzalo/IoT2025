@@ -61,8 +61,6 @@ int swap(void *elem_1, void *elem_2, size_t data_type); // Jeronimo
 int consonantes(char *string); // Jeronimo
 int vocales(char *string);     // Jeronimo
 
-// Extraiga una subcadena de una cadena dada, debe retornar -1 en caso de no encontrarse. (sin
-// ar librerías standard):
 
 // Lea una oración y reemplace los caracteres en minúsculas con mayúsculas o viceversa según
 // cida el usuario. (sin usar librerías standard):
@@ -70,6 +68,6 @@ void string_to_caps(char *string); // Jeronimo
 void string_to_min(char *string);  // Jeronimo
 
 // Al ingresar dos fechas encuentre la diferencia, en días, entre ellas.
-// int days_left(date_t start, date_t finish); // TODOS, dificil
+int days_left(date_t start, date_t finish); // TODOS, dificil
 
 #endif // GLOBAL_H_
