@@ -1,6 +1,0 @@
-C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/build/CMakeFiles/mi_programa.dir
-C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/build/CMakeFiles/edit_cache.dir
-C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/build/CMakeFiles/rebuild_cache.dir
-C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/build/components/global_lib/CMakeFiles/global_lib.dir
-C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/build/components/global_lib/CMakeFiles/edit_cache.dir
-C:/Users/selt2/OneDrive/Escritorio/branch_test1/IoT2025/lab_1/primera_parte/build/components/global_lib/CMakeFiles/rebuild_cache.dir
