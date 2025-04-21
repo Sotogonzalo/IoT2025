@@ -191,6 +191,7 @@ int find_in_string(char *haystack, char *needle)
     // si no encontramos el needle, return -1
     return -1;
 }
+
 complex_t prod(complex_t a, complex_t b)
 {
     complex_t result;
@@ -199,6 +200,99 @@ complex_t prod(complex_t a, complex_t b)
     result.real = a.real * b.real - a.imag * b.imag;
     result.imag = a.real * b.imag + a.imag * b.real;
     return result;
+}
+
+// Intercambio de elementos
+int swap(void *elem_1, void *elem_2, size_t data_type) {
+    if (!elem_1 || !elem_2 || data_type == 0) return -1;
+
+    char *ptr1 = (char *)elem_1;
+    char *ptr2 = (char *)elem_2;
+
+    for (size_t i = 0; i < data_type; i++) {
+        char temp = ptr1[i];
+        ptr1[i] = ptr2[i];
+        ptr2[i] = temp;
+    }
+
+    return 0;
+}
+
+// Mostrar array en orden inverso
+void print_reverse_array(void *array, size_t data_type, size_t array_size) {
+    char *arr = (char *)array;
+    printf("Output: [");
+    for (int i = (int)array_size - 1; i >= 0; i--) {
+        if (data_type == sizeof(int)) {
+            printf("%d", *((int *)(arr + i * data_type)));
+        } else if (data_type == sizeof(float)) {
+            printf("%.2f", *((float *)(arr + i * data_type)));
+        }
+        if (i != 0) printf(", ");
+    }
+    printf("]\n");
+}
+
+// Contador de vocales
+int vocales(char *string) {
+    int count = 0;
+    while (*string) {
+        char c = *string;
+        if (c >= 'A' && c <= 'Z') c += 32; // pasar a minúscula
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') count++;
+        string++;
+    }
+    return count;
+}
+
+// Contador de consonantes
+int consonantes(char *string) {
+    int count = 0;
+    while (*string) {
+        char c = *string;
+        if (c >= 'A' && c <= 'Z') c += 32; // pasar a minúscula
+        if ((c >= 'a' && c <= 'z') &&
+            !(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')) {
+            count++;
+        }
+        string++;
+    }
+    return count;
+}
+
+// Conversión a mayúsculas
+void string_to_caps(char *string) {
+    while (*string) {
+        if (*string >= 'a' && *string <= 'z') {
+            *string = *string - 32;
+        }
+        string++;
+    }
+}
+
+// Conversión a minúsculas
+void string_to_min(char *string) {
+    while (*string) {
+        if (*string >= 'A' && *string <= 'Z') {
+            *string = *string + 32;
+        }
+        string++;
+    }
+}
+
+// Calcular días entre dos fechas (simplificado, sin años bisiestos)
+int days_left(date_t start, date_t finish) {
+    int days_in_month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+    int total_days_start = start.day;
+    for (int i = 0; i < start.month - 1; i++) total_days_start += days_in_month[i];
+    total_days_start += start.year * 365;
+
+    int total_days_finish = finish.day;
+    for (int i = 0; i < finish.month - 1; i++) total_days_finish += days_in_month[i];
+    total_days_finish += finish.year * 365;
+
+    return total_days_finish - total_days_start;
 }
 
 // Funciones para mostrar las estructuras diseñadas en global.h
@@ -228,5 +322,18 @@ void display_complex(complex_t c) {
         printf("Número complejo: %.2f + %.2fi\n", c.real, c.imag);
     } else {
         printf("Número complejo: %.2f - %.2fi\n", c.real, -c.imag);
+    }
+}
+
+void display_date(date_t d) {
+    printf("%02d/%02d/%04d", d.day, d.month, d.year);
+}
+
+void display_matriz(matriz_t m, size_t filas, size_t columnas) {
+    for (size_t i = 0; i < filas; i++) {
+        for (size_t j = 0; j < columnas; j++) {
+            printf("%4d", m.data[i][j]);
+        }
+        printf("\n");
     }
 }
